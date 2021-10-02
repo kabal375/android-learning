@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/texture_gray"
     tools:context=".MainActivity">
 
     <GridLayout
@@ -18,7 +19,13 @@
             android:id="@+id/screen"
             android:layout_columnSpan="4"
             android:layout_gravity="fill"
-            android:inputType="numberSigned|numberDecimal" />
+            android:inputType="numberSigned|numberDecimal"
+            android:minHeight="48dp"
+            android:textColor="@color/teal_200"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            tools:text="12345678"
+            android:autofillHints="" />
 
         <Button
             android:id="@+id/key_1"
